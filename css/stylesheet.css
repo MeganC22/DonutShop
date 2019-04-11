@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    background-color: #01b0ce;
+}
+div,section,header,footer,nav {
+    display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+
+/* NavBar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  font-family: 'Dosis', sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #01b0ce;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #01b0ce;
+  color: #ffffff;
+}
+
+.active {
+  background-color: #01b0ce;
+  color: #ffffff;
+}
+
+
+/* Header */
+.header {
+    background-image:url("../Images/header.jpg");
+    background-size: cover;
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index: 0;
+    margin-bottom: 80px;
+    border-bottom: 10px solid #ffffff;
+}
+
+
+/* Gallery */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Dosis', sans-serif;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*About Section*/
+h4{
+	color: white; 
+	padding: 35px;
+	font-family: 'Dosis', sans-serif;
+}
+
+/* Contact Section */
+
+#contact {
+    color: #01b0ce;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Dosis', sans-serif;
+}
+
+input[type=submit] {
+  background-color: #FFA500;
+  color: white;
+  padding: 12px 90px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Dosis', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #E89000;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
